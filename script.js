@@ -27,7 +27,8 @@ const winningPositions = [
     [2, 4, 6]
 ];
 
-
+const clickSound = new Audio("./assets/sounds/click.wav");
+const winSound = new Audio("./assets/sounds/winner.mp3");
 // create a function to inititalise the game 
 function initGame() {
     currentPlayer = "X";
@@ -88,6 +89,7 @@ function checkGameOver() {
     // it means we have a winner 
     if(answer !== "" ) {
         gameInfo.innerText = `Winner Player - ${answer}`;
+        winSound.play();
         newGameBtn.classList.add("active");
         return;
     } 
@@ -117,8 +119,10 @@ function handleClick(index) {
     // newGameBtn.classList.add("active");
      if(gameGrid[index] == "") {
         boxes[index].innerText = currentPlayer; // changes the UI
+
         gameGrid[index] = currentPlayer; // changes the gameGrid array 
         boxes[index].style.pointerEvents = "none";
+        clickSound.play();
         // swap the turn 
         swapTurn();
         // check koi jeet to nahi gaya
