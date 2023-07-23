@@ -22,7 +22,7 @@ styles.css: The CSS file containing the styles for the game.
 script.js: The JavaScript file containing the game logic.
 README.md: This file providing information about the game.
 Development and Contributions
-This Tic Tac Toe game was developed by [Your Name]. It is a small project created for educational purposes and to showcase basic JavaScript, HTML, and CSS skills.
+This Tic Tac Toe game was developed by Priyanshu Yadav. It is a small project created for educational purposes and to showcase basic JavaScript, HTML, and CSS skills.
 
 Feel free to fork this repository and make modifications, improvements, or add new features. If you find any bugs or issues, please submit an issue on the repository so that they can be addressed.
 
