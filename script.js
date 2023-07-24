@@ -31,6 +31,9 @@ const clickSound = new Audio("./assets/sounds/click.wav");
 const winSound = new Audio("./assets/sounds/winner.mp3");
 // create a function to inititalise the game 
 function initGame() {
+    winSound.pause();
+    winSound.currentTime = 0;
+
     currentPlayer = "X";
     gameGrid = ["", "", "", "", "", "", "", "", ""];
 
